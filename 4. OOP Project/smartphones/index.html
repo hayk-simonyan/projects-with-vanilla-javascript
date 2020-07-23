@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <title>Smartphones</title>
+  </head>
+  <body>
+    <div class="containter tc">
+      <h1>Smartphones</h1>
+
+      <!-- alerts -->
+      <div class="alert"></div>
+
+      <!-- form -->
+      <div class="pa3 pa5-ns center">
+        <form class="add-new-smartphone">
+          <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+            <div class="mt3">
+              <label class="db fw4 lh-copy f6" for="brand">Brand</label>
+              <input
+                class="pa2 input-reset ba bg-transparent w-100 measure"
+                type="text"
+                name="brand"
+                id="brand"
+              />
+            </div>
+            <div class="mt3">
+              <label class="db fw4 lh-copy f6" for="price">Price</label>
+              <input
+                class="pa2 input-reset ba bg-transparent w-100 measure"
+                type="number"
+                name="price"
+                id="price"
+              />
+            </div>
+          </fieldset>
+          <div class="mt3">
+            <input
+              class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6"
+              type="submit"
+              value="Add"
+            />
+          </div>
+        </form>
+      </div>
+
+      <!-- list -->
+      <div class="pa3 pa5-ns">
+        <ul class="list pl0 measure center">
+          <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+            Orange
+            <button class="remove-item fr">x</button>
+          </li>
+          <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+            Apple
+            <button class="remove-item fr">x</button>
+          </li>
+          <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+            Peach
+            <button class="remove-item fr">x</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script src="appes6.js"></script> -->
+  </body>
+</html>
